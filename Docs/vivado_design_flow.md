@@ -66,14 +66,11 @@ Use the following command with the parameters outlined in the following table to
 |---|---|
 | interface_type 				| spix4 |
 | size 							| 256 |
-| user_config_region_offset[1] 	| 0x01002000 |
+| user_config_region_offset 	| 0x00000000 |
 | input_file.bit 				| Filename of the input .bit file |
 | output_file.mcs 				| MCS output filename |
 
 **TABLE**: write_cfgmem Parameter Settings
-
-
-*[1] Address 0x00000000 through 0x01001FFF is a write protected region which holds the card's golden recovery image and cannot be written to. The user_config_region_offset setting cannot be within this range.*
 
 
 For additional details on write_cfgmem, see the [UltraScale Architecture Configuration User Guide (UG570)](https://docs.xilinx.com/v/u/en-US/ug570-ultrascale-configuration).
